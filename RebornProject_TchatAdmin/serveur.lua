@@ -1,11 +1,3 @@
-if Langue == "fr" then
-    LangueChoisie = Locales.fr
-elseif Langue == "en" then
-    LangueChoisie = Locales.en
-elseif Langue == "es" then
-    LangueChoisie = Locales.es
-end
-
 RegisterServerEvent("RebornProject:RecuperationSteamID_Serveur")
 AddEventHandler("RebornProject:RecuperationSteamID_Serveur", function()
   local source = source
