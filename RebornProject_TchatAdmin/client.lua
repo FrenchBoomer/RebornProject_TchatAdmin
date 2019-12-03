@@ -13,7 +13,11 @@ end)
 
 RegisterNetEvent('RebornProject:EnvoieDuMessageAdminAuJoueur')
 AddEventHandler("RebornProject:EnvoieDuMessageAdminAuJoueur", function(MessageAuJoueur)
-    TriggerEvent('chatMessage', LangueChoisie.titremessage, {R,G,B}, MessageAuJoueur)
+    TriggerEvent('chat:addMessage', {
+      color = { R, G, B},
+      multiline = true,
+      args = {LangueChoisie.titremessage, MessageAuJoueur}
+    })
 end)
 
 RegisterNetEvent('RebornProject:NotificationImage')
